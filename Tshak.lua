@@ -1,8 +1,8 @@
 ------------------------------------------------
--- This Source Was Developed By (Lar) @MuSiC_P4.--
---   This Is The Source Channel @MuSiC_P4 .   --
+-- This Source Was Developed By (Lar) @FFMRD.--
+--   This Is The Source Channel @FFMRD .   --
 --           - - سورس تشاك . -                 --
---        -- https://t.me/MuSiC_P4 --         --
+--        -- https://t.me/FFMRD --         --
 ------------------------------------------------ 
 URL     = require("./libs/url")
 JSON    = require("./libs/dkjson")
@@ -106,7 +106,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1766213127}  
+local ListSudos ={Sudo_Id,2100004938}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true end end
@@ -116,7 +116,7 @@ function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersAS = Redis:sismember(Tshak.."Tshak:DevelopersAS:Groups",UserId) 
 DevelopersQ = Redis:sismember(Tshak.."Tshak:DevelopersQ:Groups",UserId) 
-if UserId == 1766213127 then Status = true elseif UserId == 1766213127 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true else Status = false end return Status end
+if UserId == 2100004938 then Status = true elseif UserId == 2100004938 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true else Status = false end return Status end
 function Controller(ChatId,UserId) Status = 0
 Developers = Redis:sismember(Tshak.."Tshak:Developers:Groups",UserId) 
 DevelopersAS = Redis:sismember(Tshak.."Tshak:DevelopersAS:Groups",UserId) 
@@ -130,7 +130,7 @@ Addictive = Redis:sismember(Tshak.."Tshak:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Tshak.."Tshak:Distinguished:Group"..ChatId,UserId)
 Cleaner = Redis:sismember(Tshak.."Tshak:Cleaner:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1766213127 then Status = 'مبرمج السورس' elseif UserId == 1766213127 then Status = 'مطور السورس' elseif UserId == Sudo_Id then Status = 'المطور الاساسي' elseif UserId == Tshak then Status = 'البوت' elseif DevelopersAS then Status = 'المطور الاساسي' elseif DevelopersQ then Status = 'المطور الاساسي²' elseif Developers then Status = Redis:get(Tshak.."Tshak:Developer:Bot:Reply"..ChatId) or 'المطور' elseif TheBas then Status = Redis:get(Tshak.."Tshak:TheBas:Group:Reply"..ChatId) or 'المالك' elseif TheBasicsQ then Status = Redis:get(Tshak.."Tshak:PresidentQ:Group:Reply"..ChatId) or 'المالك' elseif TheBasics then Status = Redis:get(Tshak.."Tshak:President:Group:Reply"..ChatId) or 'المنشئ الاساسي' elseif Originators then Status = Redis:get(Tshak.."Tshak:Constructor:Group:Reply"..ChatId) or 'المنشئ' elseif Managers then Status = Redis:get(Tshak.."Tshak:Manager:Group:Reply"..ChatId) or 'المدير' elseif Addictive then Status = Redis:get(Tshak.."Tshak:Admin:Group:Reply"..ChatId) or 'الادمن' elseif StatusMember == "chatMemberStatusCreator" then Status = 'مالك المجموعة' elseif StatusMember == "chatMemberStatusAdministrator" then Status = 'ادمن المجموعة' elseif Distinguished then Status = Redis:get(Tshak.."Tshak:Vip:Group:Reply"..ChatId) or 'المميز' elseif Cleaner then Status = Redis:get(Tshak.."Tshak:Cle:Group:Reply"..ChatId) or 'المنظف' else Status = Redis:get(Tshak.."Tshak:Mempar:Group:Reply"..ChatId) or 'العضو' end return Status end 
+if UserId == 2100004938 then Status = 'مبرمج السورس' elseif UserId == 2100004938 then Status = 'مطور السورس' elseif UserId == Sudo_Id then Status = 'المطور الاساسي' elseif UserId == Tshak then Status = 'البوت' elseif DevelopersAS then Status = 'المطور الاساسي' elseif DevelopersQ then Status = 'المطور الاساسي²' elseif Developers then Status = Redis:get(Tshak.."Tshak:Developer:Bot:Reply"..ChatId) or 'المطور' elseif TheBas then Status = Redis:get(Tshak.."Tshak:TheBas:Group:Reply"..ChatId) or 'المالك' elseif TheBasicsQ then Status = Redis:get(Tshak.."Tshak:PresidentQ:Group:Reply"..ChatId) or 'المالك' elseif TheBasics then Status = Redis:get(Tshak.."Tshak:President:Group:Reply"..ChatId) or 'المنشئ الاساسي' elseif Originators then Status = Redis:get(Tshak.."Tshak:Constructor:Group:Reply"..ChatId) or 'المنشئ' elseif Managers then Status = Redis:get(Tshak.."Tshak:Manager:Group:Reply"..ChatId) or 'المدير' elseif Addictive then Status = Redis:get(Tshak.."Tshak:Admin:Group:Reply"..ChatId) or 'الادمن' elseif StatusMember == "chatMemberStatusCreator" then Status = 'مالك المجموعة' elseif StatusMember == "chatMemberStatusAdministrator" then Status = 'ادمن المجموعة' elseif Distinguished then Status = Redis:get(Tshak.."Tshak:Vip:Group:Reply"..ChatId) or 'المميز' elseif Cleaner then Status = Redis:get(Tshak.."Tshak:Cle:Group:Reply"..ChatId) or 'المنظف' else Status = Redis:get(Tshak.."Tshak:Mempar:Group:Reply"..ChatId) or 'العضو' end return Status end 
 function Controller_Num(Num) Status = 0 if tonumber(Num) == 1 then Status = 'المطور الاساسي' elseif tonumber(Num) == 100 then Status = 'المطور الاساسي' elseif tonumber(Num) == 2 then Status = 'المطور الاساسي²' elseif tonumber(Num) == 3 then Status = 'المطور' elseif tonumber(Num) == 99 then Status = 'المالك' elseif tonumber(Num) == 44 then Status = 'المالك' elseif tonumber(Num) == 4 then Status = 'المنشئ الاساسي' elseif tonumber(Num) == 5 then Status = 'المنشئ' elseif tonumber(Num) == 6 then Status = 'المدير' elseif tonumber(Num) == 7 then Status = 'الادمن' elseif tonumber(Num) == 88 then Status = 'المنظف' else Status = 'المميز' end return Status end 
 function GetAdminsSlahe(ChatId,UserId,user2,MsgId,t1,t2,t3,t4,t5,t6)
 local GetMemberStatus = LuaTele.getChatMember(ChatId,user2).status
@@ -279,7 +279,7 @@ Addictive = Redis:sismember(Tshak.."Tshak:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Tshak.."Tshak:Distinguished:Group"..ChatId,UserId)
 Cleaner = Redis:sismember(Tshak.."Tshak:Cleaner:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1766213127 then Status = true elseif UserId == 1766213127 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true elseif Developers then Status = true elseif TheBasics then Status = true elseif Originators then Status = true elseif Managers then Status = true elseif Addictive then Status = true elseif StatusMember == "chatMemberStatusCreator" then Status = true elseif StatusMember == "chatMemberStatusAdministrator" then Status = true elseif Distinguished then Status = true elseif Cleaner then Status = true else Status = false end return Status end 
+if UserId == 2100004938 then Status = true elseif UserId == 2100004938 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true elseif Developers then Status = true elseif TheBasics then Status = true elseif Originators then Status = true elseif Managers then Status = true elseif Addictive then Status = true elseif StatusMember == "chatMemberStatusCreator" then Status = true elseif StatusMember == "chatMemberStatusAdministrator" then Status = true elseif Distinguished then Status = true elseif Cleaner then Status = true else Status = false end return Status end 
 function StatusSilent(ChatId,UserId) Status = nil
 DevelopersAS = Redis:sismember(Tshak.."Tshak:DevelopersAS:Groups",UserId) 
 DevelopersQ = Redis:sismember(Tshak.."Tshak:DevelopersQ:Groups",UserId) 
@@ -291,7 +291,7 @@ Addictive = Redis:sismember(Tshak.."Tshak:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Tshak.."Tshak:Distinguished:Group"..ChatId,UserId)
 Cleaner = Redis:sismember(Tshak.."Tshak:Cleaner:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1766213127 then Status = true elseif UserId == 1766213127 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true elseif Developers then Status = true elseif TheBasics then Status = true elseif Originators then Status = true elseif Managers then Status = true elseif Addictive then Status = true elseif StatusMember == "chatMemberStatusCreator" then Status = true else Status = false end return Status end 
+if UserId == 2100004938 then Status = true elseif UserId == 2100004938 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true elseif Developers then Status = true elseif TheBasics then Status = true elseif Originators then Status = true elseif Managers then Status = true elseif Addictive then Status = true elseif StatusMember == "chatMemberStatusCreator" then Status = true else Status = false end return Status end 
 function GetInfoBot(msg) local GetMemberStatus = LuaTele.getChatMember(msg.chat_id,Tshak).status
 if GetMemberStatus.can_change_info then change_info = true else change_info = false end
 if GetMemberStatus.can_delete_messages then delete_messages = true else delete_messages = false end
@@ -343,8 +343,8 @@ if Statusrestricted(msg.chat_id,msg.sender_id.user_id).BanAll == true then retur
 elseif Statusrestricted(msg.chat_id,msg.sender_id.user_id).ktmAll == true then return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 elseif Statusrestricted(msg.chat_id,msg.sender_id.user_id).BanGroup == true then return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberStatus(msg.chat_id,msg.sender_id.user_id,'banned',0)
 elseif Statusrestricted(msg.chat_id,msg.sender_id.user_id).SilentGroup == true then return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}) end
-if tonumber(msg.sender_id.user_id) == 1766213127 then msg.Name_Controller = 'مبرمج السورس' msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 1766213127 then msg.Name_Controller = 'مبرمج السورس' msg.The_Controller = 1
+if tonumber(msg.sender_id.user_id) == 2100004938 then msg.Name_Controller = 'مبرمج السورس' msg.The_Controller = 1
+elseif tonumber(msg.sender_id.user_id) == 2100004938 then msg.Name_Controller = 'مبرمج السورس' msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender_id.user_id) == true then msg.The_Controller = 1 msg.Name_Controller = 'المطور الاساسي'
 elseif Redis:sismember(Tshak.."Tshak:DevelopersAS:Groups",msg.sender_id.user_id) == true then msg.The_Controller = 100 msg.Name_Controller = 'المطور الاساسي'
 elseif Redis:sismember(Tshak.."Tshak:DevelopersQ:Groups",msg.sender_id.user_id) == true then msg.The_Controller = 2 msg.Name_Controller = 'المطور الاساسي²'
@@ -1627,12 +1627,12 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,"\n↯︙لا توجد قناة في الاشتراك ارسل تغيير الاشتراك الاجباري","md",true) end end
 if text == '‹ مطور السورس ›' or text == 'مطور السورس' or text == 'مطور سورس' then
 local tt =[[
-↯︙[مطور السورس](https://t.me/MuSiC_P4) .
+↯︙[مطور السورس](https://t.me/FFMRD) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مبرمج السورس .', url = "https://t.me/MuSiC_P4"}},}
+keyboard.inline_keyboard = {{{text = '‹ مبرمج السورس .', url = "https://t.me/FFMRD"}},}
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/MuSiC_P4&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/FFMRD&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'سورس' or text == 'السورس' or text == 'ياسورس' then
 local tt =[[
 ↯︙[اهلا بك في سورس تشاك](https://t.me/Tshaak) .
@@ -1643,12 +1643,12 @@ local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/Tshaak&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'مبرمج السورس' or text == 'حربي' or text == 'مبرمج السورس' then
 local tht =[[
-↯︙[مبرمج السورس](https://t.me/MuSiC_P4) .
+↯︙[مبرمج السورس](https://t.me/FFMRD) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مبرمج السورس .', url = "https://t.me/MuSiC_P4"}},}
+keyboard.inline_keyboard = {{{text = '‹ مبرمج السورس .', url = "https://t.me/FFMRD"}},}
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/MuSiC_P4&caption=".. URL.escape(tht).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/FFMRD&caption=".. URL.escape(tht).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == '‹ تحديثات السورس ›' or text == 'قناة التحديثات' or text == 'تحديثات السورس' then
 local jtt =[[
 ↯︙[Exp Source](https://t.me/Tshaak) .
@@ -1820,7 +1820,7 @@ else
 Get_Json = Get_Json..',"'..v..'"' end end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"MuSiC_P4"}'
+Get_Json = Get_Json..'"Dev":"FFMRD"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -5654,14 +5654,15 @@ end
 end
 if text == "غنيلي" then
 if not Redis:get(Tshak.."Tshak:Status:distraction1"..msg_chat_id) then return LuaTele.sendText(msg_chat_id,msg_id,"↯︙عذراً امر غنيلي معطل","md",true) end 
-Abs = math.random(4,2824); 
-local Text ='↯︙تم اختيار المقطع الصوتي لك'
+Abs = math.random(2,140); 
+local Text ='*↯‍︙تم اختيار اغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Song'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/AudiosDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "متحركه" then
 if not Redis:get(Tshak.."Tshak:Status:distraction2"..msg_chat_id) then return LuaTele.sendText(msg_chat_id,msg_id,"↯︙عذراً امر متحركه معطل","md",true) end 
 Abs = math.random(4,1075); 
@@ -9177,14 +9178,14 @@ keyboard.inline_keyboard = {{{text = '‹ Delete Bot ›', url = "https://t.me/R
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/R3J3BOT&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/Tshaak"
+photo = "https://t.me/Tshakk/2"
 local tt =[[
 ↯︙[- سورس تشاك .](https://t.me/Tshaak) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ Source Channel ›', url = "https://t.me/Tshaak"}},{{text = '- مطور السورس .', url = "https://t.me/MuSiC_P4"}},{{text = '- مبرمج السورس .', url = "https://t.me/MuSiC_P4"}}}
+keyboard.inline_keyboard = {{{text = '‹ Source Channel ›', url = "https://t.me/Tshaak"}},{{text = '- مطور السورس .', url = "https://t.me/FFMRD"}},{{text = '- مبرمج السورس .', url = "https://t.me/FFMRD"}}}
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/Tshaak&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/Tshakk/2&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'الاوامر' then
 if not msg.Addictive then return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للادمنية واعلى فقط',"md",true)  end
 if ChannelJoin(msg) == false then
@@ -10650,7 +10651,7 @@ uuuu = Redis:get("bbobb"..msg.sender_id.user_id)
 pppp = Redis:get("rrfff"..msg.sender_id.user_id) or 0
 ballancee = Redis:get("boob"..msg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballancee)
-LuaTele.sendText(msg.chat_id,msg.id, "↯︙الاسم ⇜ "..news.."\n↯︙الحساب ⇜ `"..cccc.."`\n↯︙بنك ⇜ (تشاك )\n↯︙نوع ⇜ ( "..uuuu.." )\n↯︙الرصيد ⇜ ( "..convert_mony.." دولار 💰 )\n↯︙التسليب ( "..pppp.." دولار 💰 )","md",true)
+LuaTele.sendText(msg.chat_id,msg.id, "↯︙الاسم ⇜ "..news.."\n↯︙الحساب ⇜ `"..cccc.."`\n↯︙بنك ⇜ (تشاك )\n↯︙نوع ⇜ ( "..uuuu.." )\n↯︙الرصيد ⇜ ( "..convert_mony.." دولار 💰 )\n↯︙التسليب ( "..pppp.." دولار ?? )","md",true)
 else
 LuaTele.sendText(msg.chat_id,msg.id, "↯︙ليس لديك حساب بنكي ارسل ⇜ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -13220,7 +13221,7 @@ if text == '‹ تحديث السورس ›' then
 if not msg.DevelopersAS then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للمطور الاساسي واعلى فقط',"md",true)  end
 os.execute('rm -rf Tshak.lua')
-download('curl -s https://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@raw.githubusercontent.com/TEAM-WAD1/Tshak/main/Tshak.lua -o Tshak.lua')
+download('curl -s https://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@raw.githubusercontent.com/TEAM-WAD1/Tshak/main/Tshak.lua -o Tshak.lua')
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*↯︙تم تحديث السورس* ',"md",true)  end
 if text == '‹ تحديث الملفات ›' then
@@ -13240,10 +13241,10 @@ Redis:sadd(Tshak..'Tshak:Num:User:Pv',msg.sender_id.user_id)
 if not msg.DevelopersAS then
 if not Redis:get(Tshak.."Tshak:Start:Bot") then
 local CmdStart = '↯︙مرحبا انا بوت اسمي ‹ '..(Redis:get(Tshak.."Tshak:Name:Bot") or "تشاك")..' ›\n↯︙اختصاصي التسليه وحماية المجموعات\n↯︙من المخربين والتفليش والسبام والخ\n↯︙فقط قم برفعي ادمن في مجموعتك\n↯︙وارسل كلمة ⇜ ‹ تفعيل ›\n ↯︙ارسل /play للتمتع بأوامر الأعضاء'
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ المطور ›', url = "t.me/"..UserSudo..""},},{{text = '‹ قناة السورس ›', url = 't.me/Tshaak'},{text = '‹ لتنصيب بوت ›', url = 't.me/MuSiC_P4'},},{{text = '‹ اضفني الى مجموعتك ›', url = 't.me/'..UserBot..'?startgroup=new'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ المطور ›', url = "t.me/"..UserSudo..""},},{{text = '‹ قناة السورس ›', url = 't.me/Tshaak'},{text = '‹ لتنصيب بوت ›', url = 't.me/FFMRD'},},{{text = '‹ اضفني الى مجموعتك ›', url = 't.me/'..UserBot..'?startgroup=new'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,CmdStart,"md",false, false, false, false, reply_markup)
 else
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ المطور ›', url = "t.me/"..UserSudo..""},},{{text = '‹ قناة السورس ›', url = 't.me/Tshaak'},{text = '‹ لتنصيب بوت ›', url = 't.me/MuSiC_P4'},},{{text = '‹ اضفني الى مجموعتك ›', url = 't.me/'..UserBot..'?startgroup=new'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ المطور ›', url = "t.me/"..UserSudo..""},},{{text = '‹ قناة السورس ›', url = 't.me/Tshaak'},{text = '‹ لتنصيب بوت ›', url = 't.me/FFMRD'},},{{text = '‹ اضفني الى مجموعتك ›', url = 't.me/'..UserBot..'?startgroup=new'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,Redis:get(Tshak.."Tshak:Start:Bot"),"md",false, false, false, false, reply_markup) end
 else
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true, data = {{{text = '‹  السورس  ›',type = 'text'},{text = '‹  اسم البوت  ›', type = 'text'},},{{text = '‹  المطورين  ›',type = 'text'},{text = '‹  الاحصائيات  ›',type = 'text'},},{{text = '‹  الاذاعة  ›',type = 'text'},{text = '‹  العام  ›', type = 'text'},},{{text = '‹  الاشتراك الاجباري  ›',type = 'text'},{text = '‹  التفعيل والتعطيل  ›',type = 'text'},},{{text = '‹  ردود الخاص  ›',type = 'text'},},}}
@@ -13834,7 +13835,7 @@ keyboard.inline_keyboard = {{{text = '‹ Source Channel .', url = "https://t.me
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/Tshaak&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'مبرمج السورس' or text == 'مطور السورس' or text == 'المبرمج' then  
-local UserId_Info = LuaTele.searchPublicChat("MuSiC_P4")
+local UserId_Info = LuaTele.searchPublicChat("FFMRD")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -13849,7 +13850,7 @@ local TestText = "↯︙*Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- مطور السورس .', url = "https://t.me/MuSiC_P4"}
+{text = '- مطور السورس .', url = "https://t.me/FFMRD"}
 },
 {
 {text = '- سورس تشاك .', url='https://t.me/Tshaak'},
@@ -13862,7 +13863,7 @@ local TestText = "- معلومات مبࢪمج السورس : \\nn: name Dev . [
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- مطور السورس .', url = "https://t.me/MuSiC_P4"}
+{text = '- مطور السورس .', url = "https://t.me/FFMRD"}
 },
 {
 {text = '- سورس تشاك .', url='https://t.me/Tshaak'},
@@ -14522,12 +14523,15 @@ if Text and Text:match('(%d+)/Song') then
 local UserId = Text:match('(%d+)/Song')
 if tonumber(IdUser) == tonumber(UserId) then
 if not Redis:get(Tshak.."Tshak:Status:distraction1"..data.chat_id) then return LuaTele.answerCallbackQuery(data.id,"↯︙عذراً امر غنيلي معطل",true) end 
-Abs = math.random(4,2824); 
-local Text ='↯︙تم اختيار المقطع الصوتي لك'
+Abs = math.random(2,140); 
+local Text ='*↯‍︙تم اختيار اغنيه لك*'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Song'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Song'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+}
+}
 local msg_id = Msg_id/2097152/0.5
- https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/AudiosDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 --
 elseif Text and Text:match('(%d+)/animation') then
 local UserId = Text:match('(%d+)/animation')
@@ -16076,9 +16080,9 @@ LuaTele.answerCallbackQuery(data.id, "↯︙تم تفعيل صلاحيه اضا�
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,nil,nil,'‹ ✓ ›')
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, 1}) end end
 end
-if tonumber(IdUser) == 1766213127 then
+if tonumber(IdUser) == 2100004938 then
 data.The_Controller = 1
-elseif tonumber(IdUser) == 1766213127 then
+elseif tonumber(IdUser) == 2100004938 then
 data.The_Controller = 1
 elseif The_ControllerAll(IdUser) == true then  
 data.The_Controller = 1
