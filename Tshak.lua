@@ -13221,7 +13221,7 @@ if text == '‹ تحديث السورس ›' then
 if not msg.DevelopersAS then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للمطور الاساسي واعلى فقط',"md",true)  end
 os.execute('rm -rf Tshak.lua')
-download('curl -s https://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@raw.githubusercontent.com/TEAM-WAD1/Tshak/main/Tshak.lua -o Tshak.lua')
+download('curl -s https://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QN@raw.githubusercontent.com/TEAM-WAD1/Tshak/main/Tshak.lua -o Tshak.lua')
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*↯︙تم تحديث السورس* ',"md",true)  end
 if text == '‹ تحديث الملفات ›' then
