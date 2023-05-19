@@ -1,8 +1,8 @@
 ------------------------------------------------
--- This Source Was Developed By (Lar) @FFMRD.--
---   This Is The Source Channel @FFMRD .   --
+-- This Source Was Developed By (Lar) @S5llll.--
+--   This Is The Source Channel @S5llll .   --
 --           - - سورس تشاك . -                 --
---        -- https://t.me/FFMRD --         --
+--        -- https://t.me/S5llll --         --
 ------------------------------------------------ 
 URL     = require("./libs/url")
 JSON    = require("./libs/dkjson")
@@ -106,7 +106,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,2100004938}  
+local ListSudos ={Sudo_Id,5219956649}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true end end
@@ -116,7 +116,7 @@ function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersAS = Redis:sismember(Tshak.."Tshak:DevelopersAS:Groups",UserId) 
 DevelopersQ = Redis:sismember(Tshak.."Tshak:DevelopersQ:Groups",UserId) 
-if UserId == 2100004938 then Status = true elseif UserId == 2100004938 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true else Status = false end return Status end
+if UserId == 5219956649 then Status = true elseif UserId == 1766213127 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true else Status = false end return Status end
 function Controller(ChatId,UserId) Status = 0
 Developers = Redis:sismember(Tshak.."Tshak:Developers:Groups",UserId) 
 DevelopersAS = Redis:sismember(Tshak.."Tshak:DevelopersAS:Groups",UserId) 
@@ -130,7 +130,7 @@ Addictive = Redis:sismember(Tshak.."Tshak:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Tshak.."Tshak:Distinguished:Group"..ChatId,UserId)
 Cleaner = Redis:sismember(Tshak.."Tshak:Cleaner:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2100004938 then Status = 'مبرمج السورس' elseif UserId == 2100004938 then Status = 'مطور السورس' elseif UserId == Sudo_Id then Status = 'المطور الاساسي' elseif UserId == Tshak then Status = 'البوت' elseif DevelopersAS then Status = 'المطور الاساسي' elseif DevelopersQ then Status = 'المطور الاساسي²' elseif Developers then Status = Redis:get(Tshak.."Tshak:Developer:Bot:Reply"..ChatId) or 'المطور' elseif TheBas then Status = Redis:get(Tshak.."Tshak:TheBas:Group:Reply"..ChatId) or 'المالك' elseif TheBasicsQ then Status = Redis:get(Tshak.."Tshak:PresidentQ:Group:Reply"..ChatId) or 'المالك' elseif TheBasics then Status = Redis:get(Tshak.."Tshak:President:Group:Reply"..ChatId) or 'المنشئ الاساسي' elseif Originators then Status = Redis:get(Tshak.."Tshak:Constructor:Group:Reply"..ChatId) or 'المنشئ' elseif Managers then Status = Redis:get(Tshak.."Tshak:Manager:Group:Reply"..ChatId) or 'المدير' elseif Addictive then Status = Redis:get(Tshak.."Tshak:Admin:Group:Reply"..ChatId) or 'الادمن' elseif StatusMember == "chatMemberStatusCreator" then Status = 'مالك المجموعة' elseif StatusMember == "chatMemberStatusAdministrator" then Status = 'ادمن المجموعة' elseif Distinguished then Status = Redis:get(Tshak.."Tshak:Vip:Group:Reply"..ChatId) or 'المميز' elseif Cleaner then Status = Redis:get(Tshak.."Tshak:Cle:Group:Reply"..ChatId) or 'المنظف' else Status = Redis:get(Tshak.."Tshak:Mempar:Group:Reply"..ChatId) or 'العضو' end return Status end 
+if UserId == 5219956649 then Status = 'مبرمج السورس' elseif UserId == 1766213127 then Status = 'مطور السورس' elseif UserId == Sudo_Id then Status = 'المطور الاساسي' elseif UserId == Tshak then Status = 'البوت' elseif DevelopersAS then Status = 'المطور الاساسي' elseif DevelopersQ then Status = 'المطور الاساسي²' elseif Developers then Status = Redis:get(Tshak.."Tshak:Developer:Bot:Reply"..ChatId) or 'المطور' elseif TheBas then Status = Redis:get(Tshak.."Tshak:TheBas:Group:Reply"..ChatId) or 'المالك' elseif TheBasicsQ then Status = Redis:get(Tshak.."Tshak:PresidentQ:Group:Reply"..ChatId) or 'المالك' elseif TheBasics then Status = Redis:get(Tshak.."Tshak:President:Group:Reply"..ChatId) or 'المنشئ الاساسي' elseif Originators then Status = Redis:get(Tshak.."Tshak:Constructor:Group:Reply"..ChatId) or 'المنشئ' elseif Managers then Status = Redis:get(Tshak.."Tshak:Manager:Group:Reply"..ChatId) or 'المدير' elseif Addictive then Status = Redis:get(Tshak.."Tshak:Admin:Group:Reply"..ChatId) or 'الادمن' elseif StatusMember == "chatMemberStatusCreator" then Status = 'مالك المجموعة' elseif StatusMember == "chatMemberStatusAdministrator" then Status = 'ادمن المجموعة' elseif Distinguished then Status = Redis:get(Tshak.."Tshak:Vip:Group:Reply"..ChatId) or 'المميز' elseif Cleaner then Status = Redis:get(Tshak.."Tshak:Cle:Group:Reply"..ChatId) or 'المنظف' else Status = Redis:get(Tshak.."Tshak:Mempar:Group:Reply"..ChatId) or 'العضو' end return Status end 
 function Controller_Num(Num) Status = 0 if tonumber(Num) == 1 then Status = 'المطور الاساسي' elseif tonumber(Num) == 100 then Status = 'المطور الاساسي' elseif tonumber(Num) == 2 then Status = 'المطور الاساسي²' elseif tonumber(Num) == 3 then Status = 'المطور' elseif tonumber(Num) == 99 then Status = 'المالك' elseif tonumber(Num) == 44 then Status = 'المالك' elseif tonumber(Num) == 4 then Status = 'المنشئ الاساسي' elseif tonumber(Num) == 5 then Status = 'المنشئ' elseif tonumber(Num) == 6 then Status = 'المدير' elseif tonumber(Num) == 7 then Status = 'الادمن' elseif tonumber(Num) == 88 then Status = 'المنظف' else Status = 'المميز' end return Status end 
 function GetAdminsSlahe(ChatId,UserId,user2,MsgId,t1,t2,t3,t4,t5,t6)
 local GetMemberStatus = LuaTele.getChatMember(ChatId,user2).status
@@ -279,7 +279,7 @@ Addictive = Redis:sismember(Tshak.."Tshak:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Tshak.."Tshak:Distinguished:Group"..ChatId,UserId)
 Cleaner = Redis:sismember(Tshak.."Tshak:Cleaner:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2100004938 then Status = true elseif UserId == 2100004938 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true elseif Developers then Status = true elseif TheBasics then Status = true elseif Originators then Status = true elseif Managers then Status = true elseif Addictive then Status = true elseif StatusMember == "chatMemberStatusCreator" then Status = true elseif StatusMember == "chatMemberStatusAdministrator" then Status = true elseif Distinguished then Status = true elseif Cleaner then Status = true else Status = false end return Status end 
+if UserId == 5219956649 then Status = true elseif UserId == 5219956649 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true elseif Developers then Status = true elseif TheBasics then Status = true elseif Originators then Status = true elseif Managers then Status = true elseif Addictive then Status = true elseif StatusMember == "chatMemberStatusCreator" then Status = true elseif StatusMember == "chatMemberStatusAdministrator" then Status = true elseif Distinguished then Status = true elseif Cleaner then Status = true else Status = false end return Status end 
 function StatusSilent(ChatId,UserId) Status = nil
 DevelopersAS = Redis:sismember(Tshak.."Tshak:DevelopersAS:Groups",UserId) 
 DevelopersQ = Redis:sismember(Tshak.."Tshak:DevelopersQ:Groups",UserId) 
@@ -291,7 +291,7 @@ Addictive = Redis:sismember(Tshak.."Tshak:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Tshak.."Tshak:Distinguished:Group"..ChatId,UserId)
 Cleaner = Redis:sismember(Tshak.."Tshak:Cleaner:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2100004938 then Status = true elseif UserId == 2100004938 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true elseif Developers then Status = true elseif TheBasics then Status = true elseif Originators then Status = true elseif Managers then Status = true elseif Addictive then Status = true elseif StatusMember == "chatMemberStatusCreator" then Status = true else Status = false end return Status end 
+if UserId == 5219956649 then Status = true elseif UserId == 5219956649 then Status = true elseif UserId == Sudo_Id then Status = true elseif UserId == Tshak then Status = true elseif DevelopersAS then Status = true elseif DevelopersQ then Status = true elseif Developers then Status = true elseif TheBasics then Status = true elseif Originators then Status = true elseif Managers then Status = true elseif Addictive then Status = true elseif StatusMember == "chatMemberStatusCreator" then Status = true else Status = false end return Status end 
 function GetInfoBot(msg) local GetMemberStatus = LuaTele.getChatMember(msg.chat_id,Tshak).status
 if GetMemberStatus.can_change_info then change_info = true else change_info = false end
 if GetMemberStatus.can_delete_messages then delete_messages = true else delete_messages = false end
@@ -343,8 +343,8 @@ if Statusrestricted(msg.chat_id,msg.sender_id.user_id).BanAll == true then retur
 elseif Statusrestricted(msg.chat_id,msg.sender_id.user_id).ktmAll == true then return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 elseif Statusrestricted(msg.chat_id,msg.sender_id.user_id).BanGroup == true then return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberStatus(msg.chat_id,msg.sender_id.user_id,'banned',0)
 elseif Statusrestricted(msg.chat_id,msg.sender_id.user_id).SilentGroup == true then return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}) end
-if tonumber(msg.sender_id.user_id) == 2100004938 then msg.Name_Controller = 'مبرمج السورس' msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 2100004938 then msg.Name_Controller = 'مبرمج السورس' msg.The_Controller = 1
+if tonumber(msg.sender_id.user_id) == 5219956649 then msg.Name_Controller = 'مبرمج السورس' msg.The_Controller = 1
+elseif tonumber(msg.sender_id.user_id) == 5219956649 then msg.Name_Controller = 'مبرمج السورس' msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender_id.user_id) == true then msg.The_Controller = 1 msg.Name_Controller = 'المطور الاساسي'
 elseif Redis:sismember(Tshak.."Tshak:DevelopersAS:Groups",msg.sender_id.user_id) == true then msg.The_Controller = 100 msg.Name_Controller = 'المطور الاساسي'
 elseif Redis:sismember(Tshak.."Tshak:DevelopersQ:Groups",msg.sender_id.user_id) == true then msg.The_Controller = 2 msg.Name_Controller = 'المطور الاساسي²'
@@ -1627,36 +1627,36 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,"\n↯︙لا توجد قناة في الاشتراك ارسل تغيير الاشتراك الاجباري","md",true) end end
 if text == '‹ مطور السورس ›' or text == 'مطور السورس' or text == 'مطور سورس' then
 local tt =[[
-↯︙[مطور السورس](https://t.me/FFMRD) .
+↯︙[مطور السورس](https://t.me/MuSiC_P4) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مبرمج السورس .', url = "https://t.me/FFMRD"}},}
+keyboard.inline_keyboard = {{{text = '‹ مبرمج السورس .', url = "https://t.me/S5llll"}},}
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/FFMRD&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/S5llll&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'سورس' or text == 'السورس' or text == 'ياسورس' then
 local tt =[[
-↯︙[اهلا بك في سورس تشاك](https://t.me/Tshaak) .
+↯︙[اهلا بك في سورس تشاك](https://t.me/sourcetshak) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '- قناه السورس .', url = "https://t.me/Tshaak"}},}
+keyboard.inline_keyboard = {{{text = '- قناه السورس .', url = "https://t.me/sourcetshak"}},}
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/Tshaak&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/sourcetshak&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'مبرمج السورس' or text == 'حربي' or text == 'مبرمج السورس' then
 local tht =[[
-↯︙[مبرمج السورس](https://t.me/FFMRD) .
+↯︙[مبرمج السورس](https://t.me/S5llll) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مبرمج السورس .', url = "https://t.me/FFMRD"}},}
+keyboard.inline_keyboard = {{{text = '‹ مبرمج السورس .', url = "https://t.me/S5llll"}},}
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/FFMRD&caption=".. URL.escape(tht).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/S5llll&caption=".. URL.escape(tht).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == '‹ تحديثات السورس ›' or text == 'قناة التحديثات' or text == 'تحديثات السورس' then
 local jtt =[[
-↯︙[Exp Source](https://t.me/Tshaak) .
+↯︙[Exp Source](https://t.me/sourcetshak) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ Exp Source .', url = "https://t.me/Tshaak"}},}
+keyboard.inline_keyboard = {{{text = '‹ Exp Source .', url = "https://t.me/sourcetshak"}},}
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/Tshaak&caption=".. URL.escape(jtt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/sourcetshak&caption=".. URL.escape(jtt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == "‹ اسم البوت ›" then
 local NamesBot = (Redis:get(Tshak.."Tshak:Name:Bot") or "تشاك")
 local BotName = {
@@ -1820,7 +1820,7 @@ else
 Get_Json = Get_Json..',"'..v..'"' end end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"FFMRD"}'
+Get_Json = Get_Json..'"Dev":"S5llll"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -1953,7 +1953,7 @@ if Info_Members.members[k].status.luatele == "chatMemberStatusCreator" then
 Redis:sadd(Tshak.."Tshak:TheBas:Group"..msg_chat_id,v.member_id.user_id) 
 x = x + 1 end end
 end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ رفع الادمنيه ›', data = msg.sender_id.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحمايه ›', data =msg.sender_id.user_id..'/LockAllGroup@'..msg_chat_id},},{{text = '‹ الاوامر ›', data = msg.sender_id.user_id..'/'.. 'helpall'},},{{text = '‹ غادر ›', data = msg.sender_id.user_id..'/Yesbot'},{text = '‹ تعطيل ›', data =msg.sender_id.user_id..'/disable'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ رفع الادمنيه ›', data = msg.sender_id.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحمايه ›', data =msg.sender_id.user_id..'/LockAllGroup@'..msg_chat_id},},{{text = '‹ الاوامر ›', data = msg.sender_id.user_id..'/'.. 'helpall'},},{{text = '‹ غادر ›', data = msg.sender_id.user_id..'/Yesbot'},{text = '‹ تعطيل ›', data =msg.sender_id.user_id..'/disable'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 if not msg.ControllerBot then
 local UserInfo = LuaTele.getUser(msg.sender_id.user_id)
 for Name_User in string.gmatch(UserInfo.first_name, "[^%s]+" ) do
@@ -2016,7 +2016,7 @@ else
 Status = 'العضو'
 end
 LuaTele.sendText(Sudo_Id,0,'\n↯︙تم تفعيل مجموعة جديده ⇜ ⤈ \n•═════•| TshaK |•═════•\n↯︙بواسطة ⇜ '..LaR..'\n↯︙موقعه في المجموعة ⇜ '..Status..'\n↯︙ايدي المجموعة ⇜ ⤈\n❨ `'..msg_chat_id..'` ❩\n↯︙رابط المجموعة ⇜ ⤈\n❨ '..Info_Chats.invite_link.invite_link..' ❩\n•═════•| TshaK |•═════•\n↯︙الوقت ⇜ '..os.date('%I:%M%p')..'\n↯︙التاريخ ⇜ '..os.date('%Y/%m/%d')..'',"md",true) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ رفع الادمنيه ›', data = msg.sender_id.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحمايه ›', data =msg.sender_id.user_id..'/LockAllGroup@'..msg_chat_id},},{{text = '‹ الاوامر ›', data = msg.sender_id.user_id..'/'.. 'helpall'},},{{text = '‹ غادر ›', data = msg.sender_id.user_id..'/Yesbot'},{text = '‹ تعطيل ›', data =msg.sender_id.user_id..'/disable'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ رفع الادمنيه ›', data = msg.sender_id.user_id..'/addAdmins@'..msg_chat_id},{text = '‹ تفعيل الحمايه ›', data =msg.sender_id.user_id..'/LockAllGroup@'..msg_chat_id},},{{text = '‹ الاوامر ›', data = msg.sender_id.user_id..'/'.. 'helpall'},},{{text = '‹ غادر ›', data = msg.sender_id.user_id..'/Yesbot'},{text = '‹ تعطيل ›', data =msg.sender_id.user_id..'/disable'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 Redis:sadd(Tshak.."Tshak:ChekBotAdd",msg_chat_id)
 Redis:set(Tshak.."Tshak:Status:BanId"..msg_chat_id,true) ;Redis:set(Tshak.."Tshak:Status:SetId"..msg_chat_id,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender_id.user_id,'*↯︙تم تفعيل المجموعة ⇜ ‹ *['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ›*').unLock,'md', true, false, false, false, reply_markup) end end
@@ -2037,7 +2037,7 @@ else
 LaR = '['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')'
 end
 LuaTele.sendText(Sudo_Id,0,"↯︙تم تعطيل مجموعة جديده ⇜ ⤈ \n•═════•| TshaK |•═════•\n↯︙بواسطة ⇜ "..LaR.."\n↯︙اسم المجموعة ⇜ "..Get_Chat.title.."\n↯︙ايدي المجموعة ⇜ ⤈ \n❨ `"..msg_chat_id.."` ❩\n↯︙رابط المجموعة ⇜ ⤈\n❨ "..Info_Chats.invite_link.invite_link.." ❩\n•═════•| TshaK |•═════•\n↯︙الوقت ⇜ "..os.date("%I:%M%p").."\n↯︙التاريخ ⇜ "..os.date("%Y/%m/%d").."","md",true) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ غادر ›', data = msg.sender_id.user_id..'/Yesbott'},{text = '‹ تفعيل ›', data =msg.sender_id.user_id..'/activation'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ غادر ›', data = msg.sender_id.user_id..'/Yesbott'},{text = '‹ تفعيل ›', data =msg.sender_id.user_id..'/activation'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 Redis:srem(Tshak.."Tshak:ChekBotAdd",msg_chat_id)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender_id.user_id,'*↯︙تم تعطيل المجموعة ⇜ ‹ *['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ›*').unLock,'md',true, false, false, false, reply_markup) end end
 if text == ('تعطيل') and LuaTele.getChatMember(msg_chat_id,msg.sender_id.user_id).status.luatele == "chatMemberStatusCreator" and not msg.Developers or text == ('تعطيل') and LuaTele.getChatMember(msg_chat_id,msg.sender_id.user_id).status.luatele == "chatMemberStatusAdministrator" and not msg.Developers then
@@ -2057,7 +2057,7 @@ else
 LaR = '['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')'
 end
 LuaTele.sendText(Sudo_Id,0,"↯︙تم تعطيل مجموعة جديده ⇜ ⤈ \n•═════•| TshaK |•═════•\n↯︙بواسطة ⇜ "..LaR.."\n↯︙اسم المجموعة ⇜ "..Get_Chat.title.."\n↯︙ايدي المجموعة ⇜ ⤈ \n❨ `"..msg_chat_id.."` ❩\n↯︙رابط المجموعة ⇜ ⤈\n❨ "..Info_Chats.invite_link.invite_link.." ❩\n•═════•| TshaK |•═════•\n↯︙الوقت ⇜ "..os.date("%I:%M%p").."\n↯︙التاريخ ⇜ "..os.date("%Y/%m/%d").."","md",true) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ غادر ›', data = msg.sender_id.user_id..'/Yesbott'},{text = '‹ تفعيل ›', data =msg.sender_id.user_id..'/activation'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ غادر ›', data = msg.sender_id.user_id..'/Yesbott'},{text = '‹ تفعيل ›', data =msg.sender_id.user_id..'/activation'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 Redis:srem(Tshak.."Tshak:ChekBotAdd",msg_chat_id)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender_id.user_id,'*↯︙تم تعطيل المجموعة ⇜ ‹ *['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ›*').unLock,'md',true, false, false, false, reply_markup) end end
 if chat_type(msg.chat_id) == "GroupBot" and Redis:sismember(Tshak.."Tshak:ChekBotAdd",msg_chat_id) then
@@ -2297,7 +2297,6 @@ else
 UserInfousername = 'لا يوجد'
 end
 return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙معرفك ⇜ ❨ '..UserInfousername..' ❩',"md",true)  end
-
 if text == 'انا منو' or text == "منو اني" then
 if not Redis:get(Tshak.."Tshak:Status:IdPhoto"..msg_chat_id) then
 return false
@@ -4352,7 +4351,7 @@ if ChannelJoin(msg) == false then
 local Get_Chat = LuaTele.getChat(Redis:get(Tshak..'Tshak:ChanneliD:Join'))
 local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
 if not UserId_Info.id then return LuaTele.sendText(msg_chat_id,msg_id,"\n↯︙عذرا لا يوجد حساب بهذا المعرف ","md",true)  end
@@ -4390,7 +4389,7 @@ if ChannelJoin(msg) == false then
 local Get_Chat = LuaTele.getChat(Redis:get(Tshak..'Tshak:ChanneliD:Join'))
 local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local UserId_Info = LuaTele.searchPublicChat(UserName)
 if not UserId_Info.id then return LuaTele.sendText(msg_chat_id,msg_id,"\n↯︙عذرا لا يوجد حساب بهذا المعرف ","md",true)  end
@@ -4683,7 +4682,7 @@ if ChannelJoin(msg) == false then
 local Get_Chat = LuaTele.getChat(Redis:get(Tshak..'Tshak:ChanneliD:Join'))
 local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local ban = LuaTele.getUser(Message_Reply.sender_id.user_id)
@@ -4704,7 +4703,7 @@ if ChannelJoin(msg) == false then
 local Get_Chat = LuaTele.getChat(Redis:get(Tshak..'Tshak:ChanneliD:Join'))
 local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local ban = LuaTele.getUser(Message_Reply.sender_id.user_id)
@@ -5583,92 +5582,22 @@ Redis:del(Tshak..'Tshak:'..lock..msg_chat_id)
 end
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender_id.user_id,"*↯︙تم فتح جميع الاوامر*").unLock,"md",true)  
 return false end
-if text == "تفعيل نبذه" then
-if not msg.Managers then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n*✫︙هذا الامر يخص { "..Controller_Num(6).." }* ","md",true)  
-end
-Redis:del(Tshak.."Tshak:biousers"..msg.chat_id) 
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text='- سورس تشاك .',url="t.me/Tshaak"}
-},
-}
-}
-return LuaTele.sendText(msg_chat_id, msg_id, '✫︙تم تفعيل امر نبذه ', 'md', false, false, false, false, reply_markup)
-end
-if text == "تعطيل نبذه" then
-if not msg.Managers then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n*✫︙هذا الامر يخص { "..Controller_Num(6).." }* ","md",true)  
-end
-Redis:set(Tshak.."Tshak:biousers"..msg.chat_id,true)  
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text='- سورس تشاك .',url="t.me/Tshaak"}
-},
-}
-}
-return LuaTele.sendText(msg_chat_id, msg_id, '✫︙تم تعطيل امر نبذه ', 'md', false, false, false, false, reply_markup)
-end
-if text == 'نبذه' and not Redis:get(Tshak.."Tshak:biousers"..msg.chat_id) then
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '- ذكر', data = msg.sender_id.user_id..'/bioold'},{text = '- انثى', data = msg.sender_id.user_id..'/biobnt'},
-},
-}
-}
-return LuaTele.sendText(msg_chat_id, msg_id, '✫︙اختر نبذه حسب جنسك ', 'md', false, false, false, false, reply_markup)
-end
-if text == 'تفعيل التاكات' or text == 'تفعيل التاك التلقائي' then
-Redis:set(Tshak.."Tshak:Tagat"..msg.chat_id,true) 
-return LuaTele.sendText(msg.chat_id,msg_id,Reply_Status(msg.sender_id.user_id,"*᥀︙تم تفعيل التاك التلقائي *").unLock,"md",true) 
-end
-
-if text == 'تعطيل التاك التلقائي' or text == 'تعطيل التاكات' then
-Redis:del(Tshak.."Tshak:Tagat"..msg.chat_id) 
-return LuaTele.sendText(msg.chat_id,msg_id,Reply_Status(msg.sender_id.user_id,"*᥀︙تم تعطيل التاك التلقائي *").unLock,"md",true) 
-end
-if msg and Redis:get(Tshak.."Tshak:Tagat"..msg.chat_id) then
-if not Redis:get(Tshak..":"..msg.chat_id..":tag") then
-local Info = LuaTele.searchChatMembers(msg.chat_id, "*", 200)
-local members = Info.members
-local InfoUser = LuaTele.getUser(members[math.random(#members)].member_id.user_id)
-local texting = {"• تعال لك وين طامس :","• الطف مخلوق حياتي 💖 :","• الـهَيـبة 💖 :","• يـا قمـري ❤️‍🔥 :","• مس يحلو 🌚🤍 :","• تعا مجمعين ناقصه بس انت يروحي 😔💖 :","• وين طامس يحلو 🌚❤️‍🔥 :","• تعا نورنه 😉🤍 :","• احبك يحلو 😂👽 :","• حنسوي العاب تعا 🌚💗 :","• هاا طمست 😉🤍 :",}
-tagname = InfoUser.first_name.."ْ"
-tagname = tagname:gsub('"',"")
-tagname = tagname:gsub('"',"")
-tagname = tagname:gsub("`","")
-tagname = tagname:gsub("*","") 
-tagname = tagname:gsub("_","")
-tagname = tagname:gsub("]","")
-tagname = tagname:gsub("[[]","")
-usr = "["..tagname.."](tg://user?id="..InfoUser.id..")"
-Redis:setex(Tshak..":"..msg.chat_id..":tag",30,true)
-LuaTele.sendText(msg.chat_id,0,'*'..texting[math.random(#texting)]..'*'..usr,'md') 
-end
-end
 if text == "غنيلي" then
 if not Redis:get(Tshak.."Tshak:Status:distraction1"..msg_chat_id) then return LuaTele.sendText(msg_chat_id,msg_id,"↯︙عذراً امر غنيلي معطل","md",true) end 
-Abs = math.random(2,140); 
-local Text ='*↯‍︙تم اختيار اغنيه لك*'
+Abs = math.random(4,2824); 
+local Text ='↯︙تم اختيار المقطع الصوتي لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Song'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Song'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/AudiosDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == "متحركه" then
 if not Redis:get(Tshak.."Tshak:Status:distraction2"..msg_chat_id) then return LuaTele.sendText(msg_chat_id,msg_id,"↯︙عذراً امر متحركه معطل","md",true) end 
 Abs = math.random(4,1075); 
 local Text ='↯︙تم اختيار المتحركه لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/animation'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/animation'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5678,7 +5607,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction3"..msg_chat_id) then return Lu
 Abs = math.random(4,140); 
 local Text ='↯︙تم اختيار الشعر لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/voice'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/voice'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5689,7 +5618,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction11"..msg_chat_id) then return L
 Abs = math.random(4,140); 
 local Text ='↯︙تم اختيار الراب لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/rapp'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/rapp'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5700,7 +5629,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction9"..msg_chat_id) then return Lu
 Abs = math.random(4,1201); 
 local Text ='↯︙تم اختيار الميمز لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Memz'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Memz'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5711,7 +5640,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction8"..msg_chat_id) then return Lu
 Abs = math.random(4,612); 
 local Text ='↯︙تم اختيار ريمكس لك'
 keyboardd = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Remix'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Remix'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5722,7 +5651,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction4"..msg_chat_id) then return Lu
 Abs = math.random(4,125); 
 local Text ='↯︙تم اختيار الفلم لك'
 keyboardd = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Movies'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Movies'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5733,7 +5662,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction7"..msg_chat_id) then return Lu
 Abs = math.random(4,1002); 
 local Text ='↯︙تم اختيار الانمي لك'
 keyboardd = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Anime'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Anime'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5744,7 +5673,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction6"..msg_chat_id) then return Lu
 Abs = math.random(4,1167); 
 local Text ='↯︙تم اختيار الاغنيه لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Mp'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Mp'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5755,7 +5684,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction5"..msg_chat_id) then return Lu
 Abs = math.random(4,1171); 
 local Text ='↯︙تم اختيار الصوره لك'
 keyboardd = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Photos'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Photos'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5766,7 +5695,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction10"..msg_chat_id) then return L
 Abs = math.random(4,54); 
 local Text ='↯︙تم اختيار المسلسل لك'
 keyboardd = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Series'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = msg.sender_id.user_id..'/Series'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}
 }
 }
 local msg_id = msg.id/2097152/0.5
@@ -5897,7 +5826,7 @@ if text == '😭' or text == '😭😭' then
 if not Redis:get(Tshak.."Tshak:Sasa:Jeka"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
 end
-return LuaTele.sendText(msg_chat_id,msg_id,'*منو وياڪك عمࢪي ??*',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'*منو وياڪك عمࢪي 🥺*',"md",true)  
 end
 if text == '🥺' or text == '🥺🥺' then
 if not Redis:get(Tshak.."Tshak:Sasa:Jeka"..msg_chat_id) then
@@ -5909,7 +5838,7 @@ if text == '😒' or text == '😒😒' then
 if not Redis:get(Tshak.."Tshak:Sasa:Jeka"..msg_chat_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"* *","md",true)  
 end
-return LuaTele.sendText(msg_chat_id,msg_id,'*عدل وجهڪك ??🙄*',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'*عدل وجهڪك 😒🙄*',"md",true)  
 end
 if text == 'احبك' or text == 'حبق' then
 if not Redis:get(Tshak.."Tshak:Sasa:Jeka"..msg_chat_id) then
@@ -7610,7 +7539,7 @@ local protectionGroup = '\n*↯︙اعدادات حمايه المجموعة ⇜
 ..'\n↯︙الحظر - الطرد ⇜ '..StatusBanId
 ..'\n↯︙الالعاب ⇜ '..StatusGames
 ..'\n↯︙امر اطردني ⇜ '..Statuskickme..'*\n\n'
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id, msg_id,protectionGroup,'md', false, false, false, false, reply_markup) end
 if text == "الاعدادات" then    
 if not msg.Addictive then return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للادمنية واعلى فقط',"md",true)  end
@@ -8559,7 +8488,7 @@ local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لا�
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local R = Redis:scard(Tshak.."Tshak1:List:Rd:Sudo"..msg.chat_id)
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ حذف الردود : '..R..' ›', data = msg.sender_id.user_id..'/RdLaR'},{text = '‹ عرض الردود : '..R..' ›', data = msg.sender_id.user_id..'/Rdlar'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ حذف الردود : '..R..' ›', data = msg.sender_id.user_id..'/RdLaR'},{text = '‹ عرض الردود : '..R..' ›', data = msg.sender_id.user_id..'/Rdlar'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id, msg_id, "↯︙من خلال الازرار يمكن عرض وحذف الردود ⇜ ⤈", 'md', false, false, false, false, reply_markup) end
 --
 if text == ("ردود المدير") or text == ("مسح ردود المدير") or text == ("حذف ردود المدير") then
@@ -8571,7 +8500,7 @@ local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لا�
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local R = Redis:scard(Tshak.."Tshak:List:Manager"..msg_chat_id.."")
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ حذف الردود : '..R..' ›', data = msg.sender_id.user_id..'/RD'},{text = '‹ عرض الردود : '..R..' ›', data = msg.sender_id.user_id..'/RRD'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ حذف الردود : '..R..' ›', data = msg.sender_id.user_id..'/RD'},{text = '‹ عرض الردود : '..R..' ›', data = msg.sender_id.user_id..'/RRD'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id, msg_id, "↯︙من خلال الازرار يمكن عرض وحذف الردود ⇜ ⤈", 'md', false, false, false, false, reply_markup) end
 -- Lar --
 if text == "اضف رد" then
@@ -8608,7 +8537,7 @@ local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لا�
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local R = Redis:scard(Tshak.."Tshak11:List:Rd:Sudo")
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ حذف الردود : '..R..' ›', data = msg.sender_id.user_id..'/RSoLaR'},{text = '‹ عرض الردود : '..R..' ›', data = msg.sender_id.user_id..'/RSolar'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ حذف الردود : '..R..' ›', data = msg.sender_id.user_id..'/RSoLaR'},{text = '‹ عرض الردود : '..R..' ›', data = msg.sender_id.user_id..'/RSolar'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id, msg_id, "↯︙من خلال الازرار يمكن عرض وحذف الردود ⇜ ⤈", 'md', false, false, false, false, reply_markup) end
 --
 if text == ("ردود المطور") or text == ("مسح الردود العامه") or text == ("حذف الردود العامه") then 
@@ -8621,7 +8550,7 @@ local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لا�
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local R = Redis:scard(Tshak.."Tshak:List:Rd:Sudo")
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ حذف الردود : '..R..' ›', data = msg.sender_id.user_id..'/RDs'},{text = '‹ عرض الردود : '..R..' ›', data = msg.sender_id.user_id..'/RRDs'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ حذف الردود : '..R..' ›', data = msg.sender_id.user_id..'/RDs'},{text = '‹ عرض الردود : '..R..' ›', data = msg.sender_id.user_id..'/RRDs'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id, msg_id, "↯︙من خلال الازرار يمكن عرض وحذف الردود ⇜ ⤈", 'md', false, false, false, false, reply_markup) end
 --
 if text == ("اوامر التسليه") then 
@@ -8632,7 +8561,7 @@ local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لا�
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local R = Redis:scard(Tshak.."Tshak:List:Rd:Sudo")
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ غنيلي ›', data = msg.sender_id.user_id..'/Song'},},{{text = '‹ شعر ›', data = msg.sender_id.user_id..'/voice'},{text = '‹ اغنيه ›', data = msg.sender_id.user_id..'/Mp'},},{{text = '‹ ميمز ›', data = msg.sender_id.user_id..'/Memz'},{text = '‹ ريمكس ›', data = msg.sender_id.user_id..'/Remix'},},{{text = '‹ انمي ›', data = msg.sender_id.user_id..'/Anime'},{text = '‹ صوره ›', data = msg.sender_id.user_id..'/Photos'},},{{text = '‹ مسلسل ›', data = msg.sender_id.user_id..'/Series'},{text = '‹ فلم ›', data = msg.sender_id.user_id..'/Movies'},},{{text = '‹ متحركه ›', data = msg.sender_id.user_id..'/animation'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ غنيلي ›', data = msg.sender_id.user_id..'/Song'},},{{text = '‹ شعر ›', data = msg.sender_id.user_id..'/voice'},{text = '‹ اغنيه ›', data = msg.sender_id.user_id..'/Mp'},},{{text = '‹ ميمز ›', data = msg.sender_id.user_id..'/Memz'},{text = '‹ ريمكس ›', data = msg.sender_id.user_id..'/Remix'},},{{text = '‹ انمي ›', data = msg.sender_id.user_id..'/Anime'},{text = '‹ صوره ›', data = msg.sender_id.user_id..'/Photos'},},{{text = '‹ مسلسل ›', data = msg.sender_id.user_id..'/Series'},{text = '‹ فلم ›', data = msg.sender_id.user_id..'/Movies'},},{{text = '‹ متحركه ›', data = msg.sender_id.user_id..'/animation'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id, msg_id, "↯︙يمكنك اختيار أحد اوامر التسليه ⇜ ⤈", 'md', false, false, false, false, reply_markup) end
 -- Lar --
 if text == "اضف رد انلاين" then
@@ -9174,18 +9103,18 @@ local tt =[[
 ↯︙Deletion link in all social media .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ Delete Bot ›', url = "https://t.me/R3J3BOT"}},{{text = '‹ Telegram', url = "https://my.telegram.org/auth?to=delete"},{text = 'Instagram ›', url = "https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}},{{text = '‹ Facebook', url = "https://www.facebook.com/help/deleteaccount"},{text = 'Snapchat ›', url = "https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},{{text = '- سورس تشاك .', url = "https://t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ Delete Bot ›', url = "https://t.me/R3J3BOT"}},{{text = '‹ Telegram', url = "https://my.telegram.org/auth?to=delete"},{text = 'Instagram ›', url = "https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}},{{text = '‹ Facebook', url = "https://www.facebook.com/help/deleteaccount"},{text = 'Snapchat ›', url = "https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},{{text = '- سورس تشاك .', url = "https://t.me/sourcetshak"}}}
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/R3J3BOT&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/Tshakk/2"
+photo = "https://t.me/sourcetshak"
 local tt =[[
-↯︙[- سورس تشاك .](https://t.me/Tshaak) .
+↯︙[- سورس تشاك .](https://t.me/sourcetshak) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ Source Channel ›', url = "https://t.me/Tshaak"}},{{text = '- مطور السورس .', url = "https://t.me/FFMRD"}},{{text = '- مبرمج السورس .', url = "https://t.me/FFMRD"}}}
+keyboard.inline_keyboard = {{{text = '‹ Source Channel ›', url = "https://t.me/sourcetshak"}},{{text = '- مطور السورس .', url = "https://t.me/MuSiC_P4"}},{{text = '- مبرمج السورس .', url = "https://t.me/s5llll"}}}
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/Tshakk/2&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/sourcetshak&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'الاوامر' then
 if not msg.Addictive then return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للادمنية واعلى فقط',"md",true)  end
 if ChannelJoin(msg) == false then
@@ -9194,7 +9123,7 @@ local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = msg.sender_id.user_id..'/help1'}, {text = ' اوامر الادمنيه', data = msg.sender_id.user_id..'/help2'},},{{text = 'اوامر المدراء', data = msg.sender_id.user_id..'/help3'}, {text = 'اوامر المنشئين', data = msg.sender_id.user_id..'/help4'},},{{text = 'اوامر المطورين', data = msg.sender_id.user_id..'/help5'}, {text = 'العاب البوت', data = msg.sender_id.user_id..'/help6'},},{{text = 'القفل والفتح', data = msg.sender_id.user_id..'/NoNextSeting'}, {text = 'التفعيل والتعطيل', data = msg.sender_id.user_id..'/listallAddorrem'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = msg.sender_id.user_id..'/help1'}, {text = ' اوامر الادمنيه', data = msg.sender_id.user_id..'/help2'},},{{text = 'اوامر المدراء', data = msg.sender_id.user_id..'/help3'}, {text = 'اوامر المنشئين', data = msg.sender_id.user_id..'/help4'},},{{text = 'اوامر المطورين', data = msg.sender_id.user_id..'/help5'}, {text = 'العاب البوت', data = msg.sender_id.user_id..'/help6'},},{{text = 'القفل والفتح', data = msg.sender_id.user_id..'/NoNextSeting'}, {text = 'التفعيل والتعطيل', data = msg.sender_id.user_id..'/listallAddorrem'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id, [[*
 ↯︙اهلا بك في قائمة الاوامر ⇜ ⤈
 •═════•| TshaK |•═════• ┉
@@ -9213,7 +9142,7 @@ local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ مسح الاساسين ›', data = msg.sender_id.user_id..'/TheBasics'},},{{text = '‹ مسح المنشئين ›', data = msg.sender_id.user_id..'/Originators'},{text = '‹ مسح المدراء ›', data = msg.sender_id.user_id..'/Managers'},},{{text = '‹ مسح الادمنيه ›', data = msg.sender_id.user_id..'/Addictive'},{text = '‹ مسح المميزين ›', data = msg.sender_id.user_id..'/DelDistinguished'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ مسح الاساسين ›', data = msg.sender_id.user_id..'/TheBasics'},},{{text = '‹ مسح المنشئين ›', data = msg.sender_id.user_id..'/Originators'},{text = '‹ مسح المدراء ›', data = msg.sender_id.user_id..'/Managers'},},{{text = '‹ مسح الادمنيه ›', data = msg.sender_id.user_id..'/Addictive'},{text = '‹ مسح المميزين ›', data = msg.sender_id.user_id..'/DelDistinguished'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙هلا بك في قسم رتب المجموعة',"md",false, false, false, false, reply_markup)
 -- LaR --
 elseif text == 'عرض الرتب' then
@@ -9229,7 +9158,7 @@ local LL = Redis:scard(Tshak.."Tshak:Originators:Group"..msg_chat_id)
 local LLL = Redis:scard(Tshak.."Tshak:Managers:Group"..msg_chat_id)
 local LLLL = Redis:scard(Tshak.."Tshak:Addictive:Group"..msg_chat_id)  
 local LLLLL = Redis:scard(Tshak.."Tshak:Distinguished:Group"..msg_chat_id)
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ الاساسيين : '..L..' ›', data = msg.sender_id.user_id..'/TheBasicslar'},},{{text = '‹ المنشئين : '..LL..' ›', data = msg.sender_id.user_id..'/Originatorslar'},{text = '‹ المدراء : '..LLL..' ›', data = msg.sender_id.user_id..'/Managerslar'},},{{text = '‹ الادمنيه : '..LLLL..' ›', data = msg.sender_id.user_id..'/Addictivelar'},{text = '‹ المميزين : '..LLLLL..' ›', data = msg.sender_id.user_id..'/DelDistinguishedlar'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ الاساسيين : '..L..' ›', data = msg.sender_id.user_id..'/TheBasicslar'},},{{text = '‹ المنشئين : '..LL..' ›', data = msg.sender_id.user_id..'/Originatorslar'},{text = '‹ المدراء : '..LLL..' ›', data = msg.sender_id.user_id..'/Managerslar'},},{{text = '‹ الادمنيه : '..LLLL..' ›', data = msg.sender_id.user_id..'/Addictivelar'},{text = '‹ المميزين : '..LLLLL..' ›', data = msg.sender_id.user_id..'/DelDistinguishedlar'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙هلا بك في قسم رتب المجموعة',"md",false, false, false, false, reply_markup)
 --
 elseif text == 'مسح رسائلي' or text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' then
@@ -9241,7 +9170,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, u
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
 local LaR = (Redis:get(Tshak..'Tshak:Num:Message:Edit'..msg.chat_id..msg.sender_id.user_id) or 0)
 local lar = (Redis:get(Tshak..'Tshak:Num:Message:User'..msg.chat_id..':'..msg.sender_id.user_id) or 0)
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ مسح سحكاتي : '..LaR..' ›', data = msg.sender_id.user_id..'/MsgDell'},{text = '‹ مسح رسائلي : '..lar..' ›', data = msg.sender_id.user_id..'/MMsgDel'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ مسح سحكاتي : '..LaR..' ›', data = msg.sender_id.user_id..'/MsgDell'},{text = '‹ مسح رسائلي : '..lar..' ›', data = msg.sender_id.user_id..'/MMsgDel'},},{{text = '‹ اخفاء الاوامر ›', data =msg.sender_id.user_id..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙من خلال الازرار يمكنك مسح رسائلك وسحكاتك',"md",false, false, false, false, reply_markup)
 -- LaR --
 elseif text == 'م1' then
@@ -9252,7 +9181,7 @@ local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help1'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help1'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
 elseif text == 'م2' then
 if not msg.Addictive then return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للادمنية واعلى فقط',"md",true)  end
@@ -9262,7 +9191,7 @@ local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help2'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help2'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
 elseif text == 'م3' then
 if not msg.Addictive then return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للادمنية واعلى فقط',"md",true)  end
@@ -9272,7 +9201,7 @@ local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help3'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help3'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
 elseif text == 'م4' then
 if not msg.Addictive then return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للادمنية واعلى فقط',"md",true)  end
@@ -9282,7 +9211,7 @@ local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help4'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help4'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
 elseif text == 'م5' then
 if not msg.Addictive then return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للادمنية واعلى فقط',"md",true)  end
@@ -9292,7 +9221,7 @@ local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help5'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help5'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
 elseif text == 'الالعاب' then
 if not msg.Addictive then return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للادمنية واعلى فقط',"md",true)  end
@@ -9302,7 +9231,7 @@ local NcH = (Redis:get(Tshak.."Tshak:CH:Bot") or Get_Chat.title)
 local NcHlink = (Redis:get(Tshak.."Tshak:CHlink:Bot") or "↯︙عذراً لاتستطيع استخدام البوت !\n↯︙عليك الاشتراك في القناة اولاً :")
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = NcH, url = 't.me/'..Redis:get(Tshak..'Tshak:Channel:Join')},},}}
 return LuaTele.sendText(msg.chat_id,msg.id,NcHlink,"md",false, false, false, false, reply_markup) end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help6'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ قائمة الاوامر ›', data = msg.sender_id.user_id..'/help6'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,'↯︙عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup) end
 if text == 'تحديث' or text == 'تحديث السورس' then
 if not msg.DevelopersAS then 
@@ -10017,7 +9946,7 @@ end
 if text == 'المليون' or text == 'من سيربح المليون' or text == 'لعبه المليون' or text == 'translat' then 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {{text = 'ابدء اللعبة الان', data = msg.sender_id.user_id..'Ml'}},
-{{text = ' - سورس تشاك .', url = "https://t.me/Tshaak"}},}}
+{{text = ' - سورس تشاك .', url = "https://t.me/sourcetshak"}},}}
 return LuaTele.sendText(msg_chat_id,msg_id, [[*↯︙مرحبا بك في لعبة من سيربح المليون*]],"md",false, false, false, false, reply_markup)
 end
 if text == "بوب" or text == "مشاهير" then
@@ -10254,7 +10183,7 @@ name = string.gsub(name,"✨","💫💫💫💫💫✨💫💫💫💫")
 name = string.gsub(name,"⛈","🌨🌨🌨🌨🌨⛈🌨🌨🌨🌨")
 name = string.gsub(name,"🌥","⛅️⛅️⛅️⛅️⛅️⛅️🌥⛅️⛅️⛅️⛅️")
 name = string.gsub(name,"⛄️","☃☃☃☃☃☃⛄️☃☃☃☃")
-name = string.gsub(name,"👨‍??","👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬👩‍🔬")
+name = string.gsub(name,"👨‍🔬","👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬👩‍🔬")
 name = string.gsub(name,"👨‍💻","👩👩👩👩👩👨‍💻👩👩")
 name = string.gsub(name,"👨‍🔧","👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👨‍🔧👩‍🔧")
 name = string.gsub(name,"👩‍🍳","👨‍🍳👨‍🍳👨‍🍳👨‍🍳👨‍🍳👩‍🍳👨‍🍳👨‍🍳")
@@ -10651,7 +10580,7 @@ uuuu = Redis:get("bbobb"..msg.sender_id.user_id)
 pppp = Redis:get("rrfff"..msg.sender_id.user_id) or 0
 ballancee = Redis:get("boob"..msg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballancee)
-LuaTele.sendText(msg.chat_id,msg.id, "↯︙الاسم ⇜ "..news.."\n↯︙الحساب ⇜ `"..cccc.."`\n↯︙بنك ⇜ (تشاك )\n↯︙نوع ⇜ ( "..uuuu.." )\n↯︙الرصيد ⇜ ( "..convert_mony.." دولار 💰 )\n↯︙التسليب ( "..pppp.." دولار ?? )","md",true)
+LuaTele.sendText(msg.chat_id,msg.id, "↯︙الاسم ⇜ "..news.."\n↯︙الحساب ⇜ `"..cccc.."`\n↯︙بنك ⇜ (تشاك )\n↯︙نوع ⇜ ( "..uuuu.." )\n↯︙الرصيد ⇜ ( "..convert_mony.." دولار 💰 )\n↯︙التسليب ( "..pppp.." دولار 💰 )","md",true)
 else
 LuaTele.sendText(msg.chat_id,msg.id, "↯︙ليس لديك حساب بنكي ارسل ⇜ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -11373,7 +11302,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- سورس تشاك .', url="t.me/Tshaak"},
+{text = '- سورس تشاك .', url="t.me/sourcetshak"},
 },
 }
 }
@@ -11432,7 +11361,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- سورس تشاك .', url="t.me/Tshaak"},
+{text = '- سورس تشاك .', url="t.me/sourcetshak"},
 },
 }
 }
@@ -12499,7 +12428,7 @@ Redis:set(msg.sender_id.user_id.."first_name:", F_Name)
 type = 'inline',
 data = {
 {
-{text = '‹ 𝙎𝙊??𝙍𝙎 𝘽𝙄𝙆𝙈𝘼 ›', url="t.me/Tshaak"},
+{text = '‹ 𝙎𝙊??𝙍𝙎 𝘽𝙄𝙆𝙈𝘼 ›', url="t.me/sourcetshak"},
 },
 }
 }
@@ -12560,7 +12489,7 @@ Redis:set(msg.sender_id.user_id.."first_name:", F_Name)
 type = 'inline',
 data = {
 {
-{text = '- سورس تشاك .', url="t.me/Tshaak"},
+{text = '- سورس تشاك .', url="t.me/sourcetshak"},
 },
 }
 }
@@ -13221,7 +13150,7 @@ if text == '‹ تحديث السورس ›' then
 if not msg.DevelopersAS then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n↯︙هذا الامر للمطور الاساسي واعلى فقط',"md",true)  end
 os.execute('rm -rf Tshak.lua')
-download('curl -s https://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QN@raw.githubusercontent.com/TEAM-WAD1/Tshak/main/Tshak.lua -o Tshak.lua')
+download('https://raw.githubusercontent.com/TEAM-WAD1/Tshak/master/Tshak.lua','Tshak.lua')
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*↯︙تم تحديث السورس* ',"md",true)  end
 if text == '‹ تحديث الملفات ›' then
@@ -13241,10 +13170,10 @@ Redis:sadd(Tshak..'Tshak:Num:User:Pv',msg.sender_id.user_id)
 if not msg.DevelopersAS then
 if not Redis:get(Tshak.."Tshak:Start:Bot") then
 local CmdStart = '↯︙مرحبا انا بوت اسمي ‹ '..(Redis:get(Tshak.."Tshak:Name:Bot") or "تشاك")..' ›\n↯︙اختصاصي التسليه وحماية المجموعات\n↯︙من المخربين والتفليش والسبام والخ\n↯︙فقط قم برفعي ادمن في مجموعتك\n↯︙وارسل كلمة ⇜ ‹ تفعيل ›\n ↯︙ارسل /play للتمتع بأوامر الأعضاء'
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ المطور ›', url = "t.me/"..UserSudo..""},},{{text = '‹ قناة السورس ›', url = 't.me/Tshaak'},{text = '‹ لتنصيب بوت ›', url = 't.me/FFMRD'},},{{text = '‹ اضفني الى مجموعتك ›', url = 't.me/'..UserBot..'?startgroup=new'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ المطور ›', url = "t.me/"..UserSudo..""},},{{text = '‹ قناة السورس ›', url = 't.me/sourcetshak'},{text = '‹ لتنصيب بوت ›', url = 't.me/S5llll'},},{{text = '‹ اضفني الى مجموعتك ›', url = 't.me/'..UserBot..'?startgroup=new'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,CmdStart,"md",false, false, false, false, reply_markup)
 else
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ المطور ›', url = "t.me/"..UserSudo..""},},{{text = '‹ قناة السورس ›', url = 't.me/Tshaak'},{text = '‹ لتنصيب بوت ›', url = 't.me/FFMRD'},},{{text = '‹ اضفني الى مجموعتك ›', url = 't.me/'..UserBot..'?startgroup=new'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ المطور ›', url = "t.me/"..UserSudo..""},},{{text = '‹ قناة السورس ›', url = 't.me/sourcetshak'},{text = '‹ لتنصيب بوت ›', url = 't.me/S5llll'},},{{text = '‹ اضفني الى مجموعتك ›', url = 't.me/'..UserBot..'?startgroup=new'},},}}
 return LuaTele.sendText(msg_chat_id,msg_id,Redis:get(Tshak.."Tshak:Start:Bot"),"md",false, false, false, false, reply_markup) end
 else
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true, data = {{{text = '‹  السورس  ›',type = 'text'},{text = '‹  اسم البوت  ›', type = 'text'},},{{text = '‹  المطورين  ›',type = 'text'},{text = '‹  الاحصائيات  ›',type = 'text'},},{{text = '‹  الاذاعة  ›',type = 'text'},{text = '‹  العام  ›', type = 'text'},},{{text = '‹  الاشتراك الاجباري  ›',type = 'text'},{text = '‹  التفعيل والتعطيل  ›',type = 'text'},},{{text = '‹  ردود الخاص  ›',type = 'text'},},}}
@@ -13720,7 +13649,7 @@ local Text ='*᥀︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '- سورس تشاك .',url="t.me/Tshaak"}
+{text = '- سورس تشاك .',url="t.me/sourcetshak"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -13731,7 +13660,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار متحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- سورس تشاك .',url="t.me/Tshaak"}},
+{{text = '- سورس تشاك .',url="t.me/sourcetshak"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13741,7 +13670,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الشعر لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- سورس تشاك .',url="t.me/Tshaak"}},
+{{text = '- سورس تشاك .',url="t.me/sourcetshak"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13752,7 +13681,7 @@ local Text ='*᥀︙تم اختيار المسلسل لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- سورس تشاك .', url = "https://t.me/Tshaak"}
+{text = '- سورس تشاك .', url = "https://t.me/sourcetshak"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -13763,7 +13692,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الميمز لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- سورس تشاك .',url="t.me/Tshaak"}},
+{{text = '- سورس تشاك .',url="t.me/sourcetshak"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/remixsource/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13774,7 +13703,7 @@ local Text ='*᥀︙تم اختيار ريمكس لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- سورس تشاك .', url = "https://t.me/Tshaak"}
+{text = '- سورس تشاك .', url = "https://t.me/sourcetshak"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -13786,7 +13715,7 @@ local Text ='*᥀︙تم اختيار الفلم لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- سورس تشاك .', url = "https://t.me/Tshaak"}
+{text = '- سورس تشاك .', url = "https://t.me/sourcetshak"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -13798,7 +13727,7 @@ local Text ='*᥀︙تم اختيار انمي لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- سورس تشاك .', url = "https://t.me/Tshaak"}
+{text = '- سورس تشاك .', url = "https://t.me/sourcetshak"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -13810,7 +13739,7 @@ local Text ='*᥀︙تم اختيار صور*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- سورس تشاك .', url = "https://t.me/Tshaak"}
+{text = '- سورس تشاك .', url = "https://t.me/sourcetshak"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -13825,17 +13754,17 @@ elseif text == "⇜ معاني الاسماء -" then LuaTele.sendText(msg_chat_
 elseif text == "⇜ حساب العمر -" then LuaTele.sendText(msg_chat_id,msg_id,'↯︙من خلال البوت يمكنك حساب عمرك \n↯︙فقط قم بارسال امر احسب + مواليدك الى البوت \n↯︙بالتنسيق التالي مثال : احسب 2000/7/24','md')
 end
 if text == '⇜  السورس -' or text == '⇜  السورس -' or text == 'قناة السورس' then
-photo = "https://t.me/Tshaak"
+photo = "https://t.me/sourcetshak"
 local tt =[[
-[- سورس تشاك .](https://t.me/Tshaak) .
+[- سورس تشاك .](https://t.me/sourcetshak) .
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ Source Channel .', url = "https://t.me/Tshaak"}},
+keyboard.inline_keyboard = {{{text = '‹ Source Channel .', url = "https://t.me/sourcetshak"}},
 }
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/Tshaak&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo=https://t.me/sourcetshak&caption=".. URL.escape(tt).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) end
 if text == 'مبرمج السورس' or text == 'مطور السورس' or text == 'المبرمج' then  
-local UserId_Info = LuaTele.searchPublicChat("FFMRD")
+local UserId_Info = LuaTele.searchPublicChat("MuSiC_P4")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -13850,10 +13779,10 @@ local TestText = "↯︙*Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- مطور السورس .', url = "https://t.me/FFMRD"}
+{text = '- مطور السورس .', url = "https://t.me/MuSiC_P4"}
 },
 {
-{text = '- سورس تشاك .', url='https://t.me/Tshaak'},
+{text = '- سورس تشاك .', url='https://t.me/sourcetshak'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -13863,10 +13792,10 @@ local TestText = "- معلومات مبࢪمج السورس : \\nn: name Dev . [
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '- مطور السورس .', url = "https://t.me/FFMRD"}
+{text = '- مطور السورس .', url = "https://t.me/MuSiC_P4"}
 },
 {
-{text = '- سورس تشاك .', url='https://t.me/Tshaak'},
+{text = '- سورس تشاك .', url='https://t.me/sourcetshak'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -14361,177 +14290,17 @@ if #list == 0 then
 t = "↯︙لا توجد ميديا في المجموعة"
 end
 return LuaTele.editMessageText(ChatId,Msg_id,t,"md",true) end end
--- 
-if Text and Text:match('(%d+)/backbio') then
-local UserId = Text:match('(%d+)/backbio')
-if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '- ذكر', data = IdUser..'/bioold'},{text = '- انثى', data = IdUser..'/biobnt'},
-},
-}
-}
-return LuaTele.editMessageText(ChatId,Msg_id,"اختر النبذه الي تريدها", 'md', true, false, reply_markup)
-end
-end
-if Text and Text:match('(%d+)/bioold') then
-local UserId = Text:match('(%d+)/bioold')
-if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '- مره اخرى', data = UserId..'/bioold'},
-},
-{
-{text = 'رجوع', data = UserId..'/backbio'},
-},
-}
-}
-local list = {
-"چنت احسك اهل مو واحد غريب .",
-
-"الرجولـۿ صعبـۿ جـداً على شـخص كُل فِكرۿ النـساء ..",
-
-"تشوفني انحني بس من اشد قيطان الحذاء",
-
-"هدوئي ليس تكبراً انما طبع أمتاز بهِ .",
-
-"التظاهر باللاشيء ، شيء عظيم ،🧡💧",
-
-"ٰاغلقو الابواب علموهمَ احترام الفرص .",
-
-"وأن كان بُعدك كـ بُعد نجمة سأحبّك .",
-
-"حيلي ؏ حيلك لو شفت التعب صابك🤍🤍!",
-
-"انتِ حكاية يستَحيل الانتِهَاء مِنهَا .",
-
-"ﺂﺂنـٰـٓﺂﺂ ولـِبـِٓلـﯝک ـﺂصحٓـٰﺂﺂب ㋡!!   ᴖ‌ ℡",
-
-"ﭑنا ﺣﻟﻣﮧﭑً ࢦࢦجميع ، لاڰنې ࢦآ ﭑحلم ب ﭑﺣﮧډ :",
-
-"ثكيلكم قيطان بحذائي ما اشده",
-
-"راسي ع السمة ورجلي بالارض",
-
-"ليس الاعمى لا يرى بل انتم لستم موجودين",
-
-"َانتَ للأبـد ،انتَ اللـي مابعـدك احّـد .",
-
-"سأكون هُنا من أجلك حتى النهاية .",
-
-"‏أندارلك من كل درب وعيونك تضيعني .",
-
-"ومازلتُ أقع أكثر في حُبك يوميًا .",
-
-"-’ ﺂݪحيـٱة ڝعبـۿۃ ݪڪـڼ ݪيـښټ ﻣښٺحـيݪۿۂ   𖤍ْ.",
-
-"أبتسمِ ولو بلغ الحزن بحراً .",
-
-"لسَست ﭑعمـَئ ولكن لاَيُهمنْيَ مـﭑ يَحدثْ ♥️",
-
-"• ﭑڪتفائي بنفسي حاجـهہ عـضيـٰمهہ .👼🏻💗",
-
-"قۆي وﺟميݪ ۆبڕيئ  🚶‍♀ᝰ",
-
-"سيٰئ جـٰداً ﻻ اطيٰق وﻻ اطـﺂﺂق "
-}
-local bioold = list[math.random(#list)]
-return LuaTele.editMessageText(ChatId,Msg_id,"["..bioold.."]", 'md', true, false, reply_markup)
-end
-elseif Text and Text:match('(%d+)/biobnt') then
-local UserId = Text:match('(%d+)/biobnt')
-if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '- مره اخرى', data = UserId..'/biobnt'},
-},
-{
-{text = 'رجوع', data = UserId..'/backbio'},
-},
-}
-}
-local list = {
-"هوَ مُخْتْلف وَأنا اُحبُ اختِلافه .",
-
-"عش الحياه لنفسك ليس لأحد آخر ♡",
-
-"وردة نادرة مهما عصفت بـها الأيام لاتذبل🤍",
-
-"ݛقٖـيـقٖـٰهہ ة آڼۨـٰﭑ ڪۨہ فـٰرﭑاشـٰهۃ طـٰﭑئرهۃ  💘،",
-
-"•تددري بغغـيبتـڪڪ ششنوو صصـار ؟",
-
-"• ע زلـت تـඋـاول ولازلـت ﭑنتضر 🧸.💗🔗",
-
-"مُمنفردة عن ﭑلعالم ، مُختلفةة لا ﭑشبه آحد ،✨🎧 ء !",
-
-"مهۿما ﺂنترکڪت ـَﺂيـۧدي آِنيـِــٰﮧمـَٓو بحۧـَﺂﭼـ‌ٰه ـَﺂحـ‌ٰد 🙂🚶‍♀",
-
-"ע ﺂﺂقـِٓبل بالهز‌يمهہ وأنّ ڪٓدتُ ﺂﺂسقُـ࣮ٓط",
-
-"هـادئه ڪِٰ ساعاتِ الليـل المتأخرهۃٓه 彡??",
-
-"﮼ﭑﻧﭑﭑ ﺳيئهـٰۃ ﯛﻣحد يـٰستـٰاهـٰل ﻟـٰطـٰفي  𖤍 #~",
-
-"ﭰويھﮧ وﻣمخيفه ڪضحڪه صداﻣم في ــألمحڪمه 🔥🙂",
-
-"- ‏خسـارة البعـض ، مڪسب لصحتـكك النفـسـيـہۦة☹️??✨",
-
-"• ‏୪ ټـَرآﭰـبنـِﯤ ۏإنټ ﺂبټعدټ ﺂِﻧﹷٰـٰا ‏୪ اټأﺛﺮ",
-
-"آذآ مكدڕت آسنَدک ـآطيَح ويآک ✨!",
-
-"- خخلاص ءنا ! مو مهمم ععد ءححد ♡",
-
-"ينتقدوني وبدقه 370HD يقلدوني",
-
-"ﭑنـٰآ لسټ مـﻼڪـٰاً ﭑﻧﭑ ڜيطۃٓﭑنهْہ ۛ بضمـۑْڔ ، 👸🏻💗",
-"⁞ ݥاِخِذۿُ خـۧﺂوۿ ععَـۧليَكم ᴖ‌💗",
-
-"ﻣڪټفيه ﺑﺣـاﻟـي ﯢﻣـاﻟي ٲﺣد ، 🖤🌈",
-
-"ﺎﻧﻧﭑ الجمـٰيـٰلهۃ ۉهـٰن ﺑﻘﭑيـٰﭑ ﺟﺟﻣﭑلي -💘.",
-
-"وهِيٓ هآي ﭑلمآيلوحَكك لآزم يشٓمر ععليكك🖤",
-
-"- ــِلا ، يعلِݥوڹ  ݥآبداخݪيِ ، ويتحدثوڹ  عني ،",
-
-"مـٰثل بـٓﯛشـِنڪـِٓي ڪلـڪـٰم تـٰرجفون منـٰي ᴖ‌ ℡",
-
-"قلدني ، لڪن بطريقهۂ جيده !",
-
-"ﻧﻘـٰﭑﭑشـٰي ڪلمـٓتيـٰن ﭑٱلثالثـٰهۃ بـٰﻟﯛڪك ، ♡☻ ،",
-
-"⊱#ۧﺂٌنـ‌ٰـيٌَ بـ‌ٰزَۧﻭ୭ديٌَ ﺂٌٰرتـۖـ‌ٰفـَع ݥـٰحـۖـ‌ٰد يۧـعـَـُلينـۧي",
-
-"- ﻵ ﺗـۤحـﭑﯛل ﺗﯛﺻلي ﺂنـﺂ ﯛ ﺂلقـمهۂ ربـع ،!🤤💚"
-}
-local biobnt = list[math.random(#list)]
-return LuaTele.editMessageText(ChatId,Msg_id,"["..biobnt.."]", 'md', true, false, reply_markup)
-end
-end
-
-
---LaR
+-- LaR
 if Text and Text:match('(%d+)/Song') then
 local UserId = Text:match('(%d+)/Song')
 if tonumber(IdUser) == tonumber(UserId) then
 if not Redis:get(Tshak.."Tshak:Status:distraction1"..data.chat_id) then return LuaTele.answerCallbackQuery(data.id,"↯︙عذراً امر غنيلي معطل",true) end 
-Abs = math.random(2,140); 
-local Text ='*↯‍︙تم اختيار اغنيه لك*'
+Abs = math.random(4,2824); 
+local Text ='↯︙تم اختيار المقطع الصوتي لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Song'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}
-}
-}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Song'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+ https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/AudiosDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
 elseif Text and Text:match('(%d+)/animation') then
 local UserId = Text:match('(%d+)/animation')
@@ -14540,7 +14309,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction2"..data.chat_id) then return L
 Abs = math.random(4,1075); 
 local Text ='↯︙تم اختيار المتحركه لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'animation'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'animation'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. ChatId .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
@@ -14551,7 +14320,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction3"..data.chat_id) then return L
 Abs = math.random(4,140); 
 local Text ='↯︙تم اختيار الشعر لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'voice'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'voice'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
  
@@ -14562,7 +14331,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction11"..data.chat_id) then return 
 Abs = math.random(4,140); 
 local Text ='↯︙تم اختيار الراب لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'rapp'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'rapp'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/RapEthan/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
@@ -14573,7 +14342,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction4"..data.chat_id) then return L
 Abs = math.random(4,1201); 
 local Text ='↯︙تم اختيار الميمز لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Memz'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Memz'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/MemzDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
@@ -14584,7 +14353,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction5"..data.chat_id) then return L
 Abs = math.random(4,612); 
 local Text ='↯︙تم اختيار الريمكس لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Remix'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Remix'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/RemixDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
@@ -14595,7 +14364,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction6"..data.chat_id) then return L
 Abs = math.random(4,125); 
 local Text ='↯︙تم اختيار الفلم لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Movies'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Movies'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. ChatId .. '&photo=https://t.me/MoviesDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
@@ -14606,7 +14375,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction7"..data.chat_id) then return L
 Abs = math.random(4,1002); 
 local Text ='↯︙تم اختيار الانمي لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Anime'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Anime'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. ChatId .. '&photo=https://t.me/AnimeDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
@@ -14617,7 +14386,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction8"..data.chat_id) then return L
 Abs = math.random(4,1167); 
 local Text ='↯︙تم اختيار الاغنيه لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Mp'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Mp'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendAudio?chat_id=' .. ChatId .. '&audio=https://t.me/DavidMp3/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
@@ -14628,7 +14397,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction9"..data.chat_id) then return L
 Abs = math.random(4,1171); 
 local Text ='↯︙تم اختيار الصوره لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Photos'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Photos'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
  https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. ChatId .. '&photo=https://t.me/PhotosDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end
 --
@@ -14639,7 +14408,7 @@ if not Redis:get(Tshak.."Tshak:Status:distraction10"..data.chat_id) then return 
 Abs = math.random(4,54); 
 local Text ='↯︙تم اختيار المسلسل لك'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Series'}},{{text='- سورس تشاك .',url="t.me/Tshaak"}}}
+keyboard.inline_keyboard = {{{text = '‹ مره اخرى ›', callback_data = IdUser..'/'.. 'Series'}},{{text='- سورس تشاك .',url="t.me/sourcetshak"}}}
 local msg_id = Msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. ChatId .. '&photo=https://t.me/SeriesDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_prsjeview=true&reply_markup="..JSON.encode(keyboard)) end end
 -- LaR
@@ -15121,7 +14890,7 @@ if Info_Members.members[k].status.luatele == "chatMemberStatusCreator" then
 Redis:sadd(Tshak.."Tshak:TheBas:Group"..data.chat_id,v.member_id.user_id) 
 x = x + 1 end end
 end
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ رفع الادمنيه ›', data = UserId..'/'.. 'addAdmins@'..data.chat_id},{text = '‹ تفعيل الحمايه ›', data = UserId..'/'.. 'LockAllGroup@'..data.chat_id},},{{text = '‹ الاوامر ›', data = UserId..'/'.. 'helpall'},},{{text = '‹ غادر ›', data = UserId..'/'..'Yesbot'},{text = '‹ تعطيل ›', data = UserId..'/'..'disable'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ رفع الادمنيه ›', data = UserId..'/'.. 'addAdmins@'..data.chat_id},{text = '‹ تفعيل الحمايه ›', data = UserId..'/'.. 'LockAllGroup@'..data.chat_id},},{{text = '‹ الاوامر ›', data = UserId..'/'.. 'helpall'},},{{text = '‹ غادر ›', data = UserId..'/'..'Yesbot'},{text = '‹ تعطيل ›', data = UserId..'/'..'disable'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 Redis:sadd(Tshak.."Tshak:ChekBotAdd",data.chat_id)
 Redis:set(Tshak.."Tshak:Status:Id"..data.chat_id,true) ;Redis:set(Tshak.."Tshak:Status:Reply"..data.chat_id,true) ;Redis:set(Tshak.."Tshak:Status:ReplySudo"..data.chat_id,true) ;Redis:set(Tshak.."Tshak:Status:BanId"..data.chat_id,true) ;Redis:set(Tshak.."Tshak:Status:SetId"..data.chat_id,true) 
 return LuaTele.sendText(ChatId,Msg_id,'*↯︙تم اعادة تفعيل المجموعة ⇜ ‹ *['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ›*','md', true, false, false, false, reply_markup) end end 
@@ -15134,7 +14903,7 @@ local Get_Chat = LuaTele.getChat(data.chat_id)
 local Info_Chats = LuaTele.getSupergroupFullInfo(data.chat_id)
 if not Redis:sismember(Tshak.."Tshak:ChekBotAdd",data.chat_id) then return LuaTele.editMessageText(ChatId,Msg_id, '\n↯︙المجموعة تم تعطيلها بالتأكيد',"md",true)  
 else
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ غادر ›', data = UserId..'/'..'Yesbot'},{text = '‹ تفعيل ›', data = UserId..'/'..'activation'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ غادر ›', data = UserId..'/'..'Yesbot'},{text = '‹ تفعيل ›', data = UserId..'/'..'activation'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 Redis:srem(Tshak.."Tshak:ChekBotAdd",data.chat_id)
 return LuaTele.sendText(ChatId,Msg_id,'*↯︙تم تعطيل المجموعة ⇜ ‹ *['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ›*','md',true, false, false, false, reply_markup) end end
 end
@@ -15178,7 +14947,7 @@ return LuaTele.editMessageText(ChatId,Msg_id,TextMahibesAgane, 'md', true, false
 if Text and Text:match('(%d+)/help1') then
 local UserId = Text:match('(%d+)/help1')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 local TextHelp = [[*
 ↯︙اوامر الحمايه الخاصه بالمجموعة ⇜ ⤈
 •═════•| TshaK |•═════•
@@ -15217,7 +14986,7 @@ LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 elseif Text and Text:match('(%d+)/help2') then
 local UserId = Text:match('(%d+)/help2')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 local TextHelp = [[*
 ↯︙اوامر ادمنية ⇜ ⤈
 •═════•| TshaK |•═════•
@@ -15255,7 +15024,7 @@ LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 elseif Text and Text:match('(%d+)/help3') then
 local UserId = Text:match('(%d+)/help3')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 local TextHelp = [[*
 ↯︙اوامر المدراء ⇜ ⤈
 •═════•| TshaK |•═════•
@@ -15287,7 +15056,7 @@ LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 elseif Text and Text:match('(%d+)/help4') then
 local UserId = Text:match('(%d+)/help4')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 local TextHelp = [[*
 ↯︙اوامر المنشئ الاساسي ⇜ ⤈
 •═════•| TshaK |•═════•
@@ -15307,7 +15076,7 @@ LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 elseif Text and Text:match('(%d+)/help5') then
 local UserId = Text:match('(%d+)/help5')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'العاب البوت', data = IdUser..'/help6'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 local TextHelp = [[*
 ↯︙اوامر المطور الاساسي ⇜ ⤈
 •═════•| TshaK |•═════•
@@ -15338,7 +15107,7 @@ LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 elseif Text and Text:match('(%d+)/help6') then
 local UserId = Text:match('(%d+)/help6')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'},},{{text = '‹ القائمه الرئيسيه › ', data = IdUser..'/helpall'},},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 local TextHelp = [[*
 ↯︙قائمه الالعاب البوت ⇜ ⤈
 •═════•| TshaK |•═════•
@@ -15370,7 +15139,7 @@ LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 elseif Text and Text:match('(%d+)/helpall') then
 local UserId = Text:match('(%d+)/helpall')
 if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = 'القفل والفتح', data = IdUser..'/NoNextSeting'}, {text = 'التفعيل والتعطيل', data = IdUser..'/listallAddorrem'},},{{text = '‹ اخفاء الاوامر ›', data =IdUser..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اوامر الحمايه', data = IdUser..'/help1'}, {text = 'اوامر الادمنيه', data = IdUser..'/help2'},},{{text = 'اوامر المدراء', data = IdUser..'/help3'}, {text = 'اوامر المنشئين', data = IdUser..'/help4'},},{{text = 'اوامر المطورين', data = IdUser..'/help5'}, {text = 'العاب البوت', data = IdUser..'/help6'},},{{text = 'القفل والفتح', data = IdUser..'/NoNextSeting'}, {text = 'التفعيل والتعطيل', data = IdUser..'/listallAddorrem'},},{{text = '‹ اخفاء الاوامر ›', data =IdUser..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 local TextHelp = [[*
 ↯︙اهلا بك في قائمة الاوامر ⇜ ⤈
 •═════•| TshaK |•═════• ┉
@@ -16080,9 +15849,9 @@ LuaTele.answerCallbackQuery(data.id, "↯︙تم تفعيل صلاحيه اضا�
 GetAdminsSlahe(ChatId,UserId[1],UserId[2],Msg_id,nil,nil,nil,nil,nil,'‹ ✓ ›')
 LuaTele.setChatMemberStatus(ChatId,UserId[2],'administrator',{0 ,GetAdminsNum(ChatId,UserId[2]).change_info, 0, 0, GetAdminsNum(ChatId,UserId[2]).delete_messages, GetAdminsNum(ChatId,UserId[2]).invite_users, GetAdminsNum(ChatId,UserId[2]).restrict_members ,GetAdminsNum(ChatId,UserId[2]).pin_messages, 1}) end end
 end
-if tonumber(IdUser) == 2100004938 then
+if tonumber(IdUser) == 5219956649 then
 data.The_Controller = 1
-elseif tonumber(IdUser) == 2100004938 then
+elseif tonumber(IdUser) == 5219956649 then
 data.The_Controller = 1
 elseif The_ControllerAll(IdUser) == true then  
 data.The_Controller = 1
@@ -16437,7 +16206,7 @@ if tonumber(IdUser) == tonumber(UserId) then
 local LaR = (Redis:get(Tshak..'Tshak:Num:Message:Edit'..data.chat_id..UserId) or 0)
 local lar = (Redis:get(Tshak..'Tshak:Num:Message:User'..data.chat_id..':'..UserId) or 0)
 local Text = "\n↯︙من خلال الازرار يمكنك مسح رسائلك وسحكاتك"
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ مسح سحكاتي : '..LaR..' ›', data =IdUser..'/'.. 'MsgDell'},{text = '‹ مسح رسائلي : '..lar..' ›', data =IdUser..'/'.. 'MMsgDel'},},{{text = '‹ اخفاء الاوامر ›', data =IdUser..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/Tshaak'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '‹ مسح سحكاتي : '..LaR..' ›', data =IdUser..'/'.. 'MsgDell'},{text = '‹ مسح رسائلي : '..lar..' ›', data =IdUser..'/'.. 'MMsgDel'},},{{text = '‹ اخفاء الاوامر ›', data =IdUser..'/'.. 'delAmr'}},{{text = '- سورس تشاك .', url = 't.me/sourcetshak'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Text, 'md', false, false, reply_markup) end end 
 -- LaR
 if Text and Text:match('(%d+)Ml') then
